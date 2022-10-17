@@ -1,0 +1,20 @@
+<nav>
+  <input id="nav-toggle" type="checkbox" />
+  <label class="nav-btn" for="nav-toggle">
+    <span></span>
+  </label>
+  <ul>
+    <li>
+      <a class="nav-topic" routerLink="/">{{ menu[0] | uppercase }}</a>
+    </li>
+    <li>
+      <a class="nav-topic" routerLink="/about">{{ menu[1] | uppercase }}</a>
+    </li>
+    <li>
+      <a class="nav-topic" routerLink="/projects">{{ menu[2] | uppercase }}</a>
+    </li>
+    <li>
+      <a class="nav-topic" routerLink="/contact">{{ menu[3] | uppercase }}</a>
+    </li>
+  </ul>
+</nav>

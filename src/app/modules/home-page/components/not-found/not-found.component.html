@@ -1,0 +1,11 @@
+<div class="not-found">
+  <p>{{ errorCode }}</p>
+  <img
+    [alt]="pageNotFoundPicture.imageAlt"
+    [src]="pageNotFoundPicture.imageSrc"
+    [title]="pageNotFoundPicture.imageTitle"
+  />
+  <h1>{{ errorCodeMsg }}</h1>
+  <br />
+  <app-home-button [homeButton]="backButton"></app-home-button>
+</div>

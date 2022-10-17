@@ -1,0 +1,24 @@
+<app-navbar></app-navbar>
+<app-page-title [pageTitle]="currentPageTitle"></app-page-title>
+<section>
+  <div class="card">
+    <p>{{ paragraph1 }}</p>
+    <div class="email">
+      <img
+        [alt]="contactPicture.imageAlt"
+        [src]="contactPicture.imageSrc"
+        [title]="contactPicture.imageTitle"
+      />
+      <button class="button" type="button">
+        <a
+          href="mailto:nicolas26386@gmail.com"
+          rel="noopener noreferrer"
+          target="_blank"
+          >{{ hiButton }}</a
+        >
+      </button>
+    </div>
+  </div>
+  <app-scroll-down [routerLink]="homePage"></app-scroll-down>
+</section>
+<app-footer></app-footer>

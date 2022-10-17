@@ -1,0 +1,23 @@
+<app-navbar></app-navbar>
+<app-page-title [pageTitle]="currentPageTitle"></app-page-title>
+<section>
+  <div class="card">
+    <img
+      [alt]="myProfilePicture.imageAlt"
+      [src]="myProfilePicture.imageSrc"
+      [title]="myProfilePicture.imageTitle"
+    />
+    <div class="profile-data">
+      <h1>{{ introduction }} {{ fullName | titlecase }}</h1>
+      <h2>{{ profileHeading }}</h2>
+      <p>{{ description1 }}</p>
+      <p>{{ description2 }}</p>
+      <p>{{ description3 }}</p>
+      <p>{{ description4 }}</p>
+      <p>{{ description5 }}</p>
+      <p>{{ description6 }}</p>
+    </div>
+  </div>
+  <app-scroll-down [routerLink]="projectsPage"></app-scroll-down>
+</section>
+<app-footer></app-footer>

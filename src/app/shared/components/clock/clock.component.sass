@@ -1,0 +1,30 @@
+@use 'classes'
+@use 'colours'
+@use 'fonts'
+
+.clock
+    background-color: colours.$transparent-dark-grey
+    border: 0.1em solid colours.$midnight-blue
+    border-radius: 0.6em
+    position: relative
+    & p
+        color: colours.$white
+        font-family: fonts.$roboto
+        font-size: 1rem
+        font-weight: 600
+        text-align: center
+
+@media screen and (max-width: 319px)
+    .clock
+        & p
+            font-size: 0.6rem
+
+@media screen and (min-width: 320px) and (max-width: 479px)
+    .clock
+        & p
+            font-size: 0.6rem
+
+@media screen and (min-width: 480px) and (max-width: 599px)
+    .clock
+        & p
+            font-size: 0.85rem

@@ -1,0 +1,34 @@
+<footer>
+  <div class="gradient"></div>
+  <div class="clock">
+    <app-clock></app-clock>
+  </div>
+  <div class="page-info">
+    <span
+      ><p>{{ fullName | titlecase }} &copy; {{ copyrightYear }}</p></span
+    >
+  </div>
+  <div class="profiles">
+    <a href="https://www.github.com/nicolas5746/" target="_blank"
+      ><img
+        [alt]="githubIcon.imageAlt"
+        [src]="githubIcon.imageSrc"
+        [title]="githubIcon.imageTitle"
+    /></a>
+    <a
+      href="mailto:nicolas26386@gmail.com"
+      rel="noopener noreferrer"
+      target="_blank"
+      ><img
+        [alt]="gmailIcon.imageAlt"
+        [src]="gmailIcon.imageSrc"
+        [title]="gmailIcon.imageTitle"
+    /></a>
+    <a href="https://www.linkedin.com/in/nicolasbatistadev/" target="_blank"
+      ><img
+        [alt]="linkedInIcon.imageAlt"
+        [src]="linkedInIcon.imageSrc"
+        [title]="linkedInIcon.imageTitle"
+    /></a>
+  </div>
+</footer>
