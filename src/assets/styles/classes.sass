@@ -35,13 +35,15 @@ section
         width: 20%
 
 .button
+    background-color: colours.$gainsboro
     border: 0.1em solid colours.$navy
     border-radius: 0.5em
     padding: 0.2%
     &:hover
+        box-shadow: 0 0.05em 0.5em colours.$silver
         transform: scale(1.05)
     & a
-        background-color: colours.$gainsboro
+        border-radius: 0.5em
         font-family: fonts.$lato
         font-size: 1rem
         font-weight: 800
@@ -56,7 +58,6 @@ section
             color: colours.$burgundy
         &:hover
             background-color: colours.$linen
-            box-shadow: 0 0.05em 0.5em colours.$silver
             color: colours.$dark-orange
         &:active
             color: colours.$neon-orange
