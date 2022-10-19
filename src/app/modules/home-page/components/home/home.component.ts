@@ -7,16 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   public currentPageTitle: string = `home`;
+
   public aboutPage: string = `/about`;
 
-  public greeting: string = `Welcome to my Portfolio!`;
-  public paragraph1: string = `Learn more about me!`;
-
-  public greetingPicture = {
+  public greeting = {
+    welcome: `Welcome to my Portfolio!`,
+    herePara: `Here you can watch my projects and my code.`,
+    greetingPara: `Learn more about me!`,
     imageAlt: `Hello!`,
     imageSrc: `assets/images/laptop-wave.png`,
     imageTitle: `Hello!`,
-  };
+  }
 
   ngOnInit(): void {}
 }

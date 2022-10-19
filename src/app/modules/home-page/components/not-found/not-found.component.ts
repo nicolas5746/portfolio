@@ -8,16 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class NotFoundComponent implements OnInit {
   public homePage: string = `/`;
 
-  public errorCode: string = `404`;
-  public errorCodeMsg: string = `page not found`;
-  public buttonText: string = `go back`;
-  public buttonStyle: string = `padding: 0.3%`;
-
-  public pageNotFoundPicture = {
+  public notFound = {
+    errorCode: `404`,
+    errorCodeMsg: `page not found`,
+    buttonText: `go back`,
+    buttonStyle: `padding: 0.3%`,
     imageAlt: `Page not found`,
     imageSrc: `assets/images/thumbs-down.png`,
     imageTitle: `Page not found`,
-  };
+  }
 
   ngOnInit(): void {}
 }

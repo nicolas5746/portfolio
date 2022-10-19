@@ -9,31 +9,36 @@ export class ProjectsComponent implements OnInit {
   public currentPageTitle: string = `my projects`;
   public contactPage: string = `/contact`;
 
-  public githubRepository: string = `github repository`;
-
-  public pageBuiltWith: string = `Built with`;
-  public angular: string = `angular`;
-  public react: string = `react`;
-  public vue2: string = `vue 2`;
-  public vue3: string = `vue 3`;
-
-  public pageName1: string = `simpsons quotes api`;
-  public linkPage1: string = `https://simpsonsquotesapi.netlify.app/`;
-  public githubRepo1: string = `https://github.com/nicolas5746/simpsonsquotesapi/`;
-
-  public pageName2: string = `estadios del uruguay`;
-  public linkPage2: string = `https://estadiosdeluruguay.netlify.app/`;
-  public githubRepo2: string = `https://github.com/nicolas5746/estadios/`;
-
-  public pageName3: string = `automotora uruguay`;
-  public linkPage3: string = `https://automotora-uruguay.netlify.app/`;
-  public githubRepo3: string = `https://github.com/nicolas5746/automotora-uruguay/`;
-
-  public projectsPicture = {
+  public projects = {
+    blank: `_blank`,
+    built: `Built with`,
+    github: `github repository`,
     imageAlt: `My Projects`,
     imageSrc: `assets/images/studying.png`,
     imageTitle: `My Projects`,
-  };
+    lang00: `angular`,
+    lang01: `react`,
+    lang02: `vue 3`,
+    lang03: `vue 2`,
+  }
+
+  public project00 = {
+    name: `simpsons quotes api`,
+    link: `https://simpsonsquotesapi.netlify.app/`,
+    repository: `https://github.com/nicolas5746/simpsonsquotesapi/`,
+  }
+
+  public project01 = {
+    name: `estadios del uruguay`,
+    link: `https://estadiosdeluruguay.netlify.app/`,
+    repository: `https://github.com/nicolas5746/estadios/`,
+  }
+
+  public project02 = {
+    name: `automotora uruguay`,
+    link: `https://automotora-uruguay.netlify.app/`,
+    repository: `https://github.com/nicolas5746/automotora-uruguay/`,
+  }
 
   ngOnInit(): void {}
 }

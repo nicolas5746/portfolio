@@ -9,26 +9,23 @@
     >
   </div>
   <div class="profiles">
-    <a href="https://www.github.com/nicolas5746/" target="_blank"
+    <a [href]="github.profile" [target]="blank"
       ><img
-        [alt]="githubIcon.imageAlt"
-        [src]="githubIcon.imageSrc"
-        [title]="githubIcon.imageTitle"
+        [alt]="github.imageAlt"
+        [src]="github.imageSrc"
+        [title]="github.imageTitle"
     /></a>
-    <a
-      href="mailto:nicolas26386@gmail.com"
-      rel="noopener noreferrer"
-      target="_blank"
+    <a [href]="gmail.email" [rel]="relNN" [target]="blank"
       ><img
-        [alt]="gmailIcon.imageAlt"
-        [src]="gmailIcon.imageSrc"
-        [title]="gmailIcon.imageTitle"
+        [alt]="gmail.imageAlt"
+        [src]="gmail.imageSrc"
+        [title]="gmail.imageTitle"
     /></a>
-    <a href="https://www.linkedin.com/in/nicolasbatistadev/" target="_blank"
+    <a [href]="linkedIn.profile" [target]="blank"
       ><img
-        [alt]="linkedInIcon.imageAlt"
-        [src]="linkedInIcon.imageSrc"
-        [title]="linkedInIcon.imageTitle"
+        [alt]="linkedIn.imageAlt"
+        [src]="linkedIn.imageSrc"
+        [title]="linkedIn.imageTitle"
     /></a>
   </div>
 </footer>

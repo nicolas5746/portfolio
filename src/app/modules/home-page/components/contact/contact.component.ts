@@ -10,18 +10,17 @@ export class ContactComponent implements OnInit {
 
   public homePage: string = `/`;
 
-  public emailPara: string = `Send me an e-mail`;
-  public email: string = `mailto:nicolas26386@gmail.com`;
-  public rel: string = `noopener noreferrer`;
-  public target: string = `_blank`;
-  public buttonText: string = `Say Hi!`;
-  public buttonStyle: string = `padding: 2.5%`;
-
-  public contactPicture = {
+  public contactCard = {
+    buttonText: `Say Hi!`,
+    buttonStyle: `padding: 2.5%`,
+    emailPara: `Send me an e-mail`,
+    email: `mailto:nicolas26386@gmail.com`,
     imageAlt: `Contact me`,
     imageSrc: `assets/images/yay.png`,
     imageTitle: `Contact me`,
-  };
+    rel: `noopener noreferrer`,
+    target: `_blank`,
+  }
 
   ngOnInit(): void {}
 }

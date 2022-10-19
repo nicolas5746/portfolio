@@ -3,12 +3,13 @@
 <main>
   <div class="greeting">
     <img
-      [alt]="greetingPicture.imageAlt"
-      [src]="greetingPicture.imageSrc"
-      [title]="greetingPicture.imageTitle"
+      [alt]="greeting.imageAlt"
+      [src]="greeting.imageSrc"
+      [title]="greeting.imageTitle"
     />
-    <h1>{{ greeting }}</h1>
-    <p>{{ paragraph1 }}</p>
+    <h1>{{ greeting.welcome }}</h1>
+    <p>{{ greeting.herePara }}</p>
+    <p>{{ greeting.greetingPara }}</p>
   </div>
   <app-scroll-down [routerLink]="aboutPage"></app-scroll-down>
 </main>

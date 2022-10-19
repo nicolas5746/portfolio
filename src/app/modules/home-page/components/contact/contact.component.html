@@ -2,19 +2,19 @@
 <app-page-title [pageTitle]="currentPageTitle"></app-page-title>
 <section>
   <div class="card">
-    <p>{{ emailPara }}</p>
+    <p>{{ contactCard.emailPara }}</p>
     <div class="email-me">
       <img
-        [alt]="contactPicture.imageAlt"
-        [src]="contactPicture.imageSrc"
-        [title]="contactPicture.imageTitle"
+        [alt]="contactCard.imageAlt"
+        [src]="contactCard.imageSrc"
+        [title]="contactCard.imageTitle"
       />
       <app-button
-        [buttonText]="buttonText"
-        [buttonStyle]="buttonStyle"
-        [inputLink]="email"
-        [inputRel]="rel"
-        [inputTarget]="target"
+        [buttonText]="contactCard.buttonText"
+        [buttonStyle]="contactCard.buttonStyle"
+        [inputLink]="contactCard.email"
+        [inputRel]="contactCard.rel"
+        [inputTarget]="contactCard.target"
       ></app-button>
     </div>
   </div>

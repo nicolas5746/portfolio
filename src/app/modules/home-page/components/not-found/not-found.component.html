@@ -1,15 +1,15 @@
 <div class="not-found">
-  <p>{{ errorCode }}</p>
+  <p>{{ notFound.errorCode }}</p>
   <img
-    [alt]="pageNotFoundPicture.imageAlt"
-    [src]="pageNotFoundPicture.imageSrc"
-    [title]="pageNotFoundPicture.imageTitle"
+    [alt]="notFound.imageAlt"
+    [src]="notFound.imageSrc"
+    [title]="notFound.imageTitle"
   />
-  <h1>{{ errorCodeMsg | titlecase }}</h1>
+  <h1>{{ notFound.errorCodeMsg | titlecase }}</h1>
   <br />
   <app-button
     [routerLink]="homePage"
-    [buttonText]="buttonText | titlecase"
-    [buttonStyle]="buttonStyle"
+    [buttonText]="notFound.buttonText | titlecase"
+    [buttonStyle]="notFound.buttonStyle"
   ></app-button>
 </div>

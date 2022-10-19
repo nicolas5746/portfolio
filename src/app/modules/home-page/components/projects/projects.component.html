@@ -3,36 +3,36 @@
 <section>
   <div class="card">
     <img
-      [alt]="projectsPicture.imageAlt"
-      [src]="projectsPicture.imageSrc"
-      [title]="projectsPicture.imageTitle"
+      [alt]="projects.imageAlt"
+      [src]="projects.imageSrc"
+      [title]="projects.imageTitle"
     />
     <div class="projects-list">
-      <h1>{{ pageName1 | uppercase }}</h1>
-      <a [href]="linkPage1" target="_blank">
-        <h2>{{ linkPage1 }}</h2>
+      <h1>{{ project00.name | uppercase }}</h1>
+      <a [href]="project00.link" [target]="projects.blank">
+        <h2>{{ project00.link }}</h2>
       </a>
-      <p>{{ pageBuiltWith }} {{ react | titlecase }}</p>
-      <a [href]="githubRepo1" target="_blank">
-        <h3>{{ githubRepository }}</h3>
-      </a>
-
-      <h1>{{ pageName2 | uppercase }}</h1>
-      <a [href]="linkPage2" target="_blank">
-        <h2>{{ linkPage2 }}</h2>
-      </a>
-      <p>{{ pageBuiltWith }} {{ vue3 | titlecase }}</p>
-      <a [href]="githubRepo2" target="_blank">
-        <h3>{{ githubRepository }}</h3>
+      <p>{{ projects.built }} {{ projects.lang01 | titlecase }}</p>
+      <a [href]="project00.repository" [target]="projects.blank">
+        <h3>{{ projects.github }}</h3>
       </a>
 
-      <h1>{{ pageName3 | uppercase }}</h1>
-      <a [href]="linkPage3" target="_blank">
-        <h2>{{ linkPage3 }}</h2>
+      <h1>{{ project01.name | uppercase }}</h1>
+      <a [href]="project01.link" [target]="projects.blank">
+        <h2>{{ project01.link }}</h2>
       </a>
-      <p>{{ pageBuiltWith }} {{ vue2 | titlecase }}</p>
-      <a [href]="githubRepo3" target="_blank">
-        <h3>{{ githubRepository }}</h3>
+      <p>{{ projects.built }} {{ projects.lang02 | titlecase }}</p>
+      <a [href]="project01.repository" [target]="projects.blank">
+        <h3>{{ projects.github }}</h3>
+      </a>
+
+      <h1>{{ project02.name| uppercase }}</h1>
+      <a [href]="project02.link" [target]="projects.blank">
+        <h2>{{ project02.link }}</h2>
+      </a>
+      <p>{{ projects.built }} {{ projects.lang03 | titlecase }}</p>
+      <a [href]="project02.repository" [target]="projects.blank">
+        <h3>{{ projects.github }}</h3>
       </a>
     </div>
   </div>
