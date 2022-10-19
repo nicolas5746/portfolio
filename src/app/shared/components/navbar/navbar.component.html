@@ -5,16 +5,16 @@
   </label>
   <ul>
     <li>
-      <a class="nav-topic" routerLink="/">{{ menu[0] | uppercase }}</a>
+      <a class="nav-topic" [routerLink]="route[0]">{{ menu[0] | uppercase }}</a>
     </li>
     <li>
-      <a class="nav-topic" routerLink="/about">{{ menu[1] | uppercase }}</a>
+      <a class="nav-topic" [routerLink]="route[1]">{{ menu[1] | uppercase }}</a>
     </li>
     <li>
-      <a class="nav-topic" routerLink="/projects">{{ menu[2] | uppercase }}</a>
+      <a class="nav-topic" [routerLink]="route[2]">{{ menu[2] | uppercase }}</a>
     </li>
     <li>
-      <a class="nav-topic" routerLink="/contact">{{ menu[3] | uppercase }}</a>
+      <a class="nav-topic" [routerLink]="route[3]">{{ menu[3] | uppercase }}</a>
     </li>
   </ul>
 </nav>
