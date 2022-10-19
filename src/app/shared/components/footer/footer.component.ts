@@ -6,17 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.sass'],
 })
 export class FooterComponent implements OnInit {
-  public copyrightYear: number = 2022;
-  public fullName: string = `nicolás batista piñeyro`;
-
   public blank: string = `_blank`;
-  public relNN: string = `noopener noreferrer`;
+  
+  public footer = {
+    copyrightYear: 2022,
+    fullName: `nicolás batista piñeyro`,
+  }
 
   public gmail = {
     email: `mailto:nicolas26386@gmail.com`,
     imageAlt: `My Gmail`,
     imageSrc: `assets/icons/gmail.ico`,
     imageTitle: `My Gmail`,
+    rel: `noopener noreferrer`,
   }
 
   public github = {

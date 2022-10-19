@@ -5,7 +5,7 @@
   </div>
   <div class="page-info">
     <span
-      ><p>{{ fullName | titlecase }} &copy; {{ copyrightYear }}</p></span
+      ><p>{{ footer.fullName | titlecase }} &copy; {{ footer.copyrightYear }}</p></span
     >
   </div>
   <div class="profiles">
@@ -15,7 +15,7 @@
         [src]="github.imageSrc"
         [title]="github.imageTitle"
     /></a>
-    <a [href]="gmail.email" [rel]="relNN" [target]="blank"
+    <a [href]="gmail.email" [rel]="gmail.rel" [target]="blank"
       ><img
         [alt]="gmail.imageAlt"
         [src]="gmail.imageSrc"
