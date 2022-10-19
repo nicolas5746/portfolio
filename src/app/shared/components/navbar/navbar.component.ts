@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
   public menu: Array<string> = [`home`, `about me`, `my projects`, `contact`];
-  public route: Array<string> = [`/`, `/about`, `/projects`, `/contact`];
+  public routes: Array<string> = [`/`, `/about`, `/projects`, `/contact`];
 
   ngOnInit(): void {}
 }
