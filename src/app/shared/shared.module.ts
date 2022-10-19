@@ -3,9 +3,9 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
+import { ButtonComponent } from './components/button/button.component';
 import { ClockComponent } from './components/clock/clock.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { HomeButtonComponent } from './components/home-button/home-button.component';
 import { LoaderComponent } from './components/loader/loader.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PageTitleComponent } from './components/page-title/page-title.component';
@@ -15,9 +15,9 @@ import { LoaderInterceptor } from '@core/interceptors/loader.interceptor';
 
 @NgModule({
   declarations: [
+    ButtonComponent,
     ClockComponent,
     FooterComponent,
-    HomeButtonComponent,
     LoaderComponent,
     NavbarComponent,
     PageTitleComponent,
@@ -25,9 +25,9 @@ import { LoaderInterceptor } from '@core/interceptors/loader.interceptor';
   ],
   imports: [CommonModule, HttpClientModule, RouterModule],
   exports: [
+    ButtonComponent,
     ClockComponent,
     FooterComponent,
-    HomeButtonComponent,
     LoaderComponent,
     NavbarComponent,
     PageTitleComponent,

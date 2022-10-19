@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 import { NotFoundComponent } from '@modules/home-page/components/not-found/not-found.component';
 
@@ -8,6 +9,6 @@ import { SharedModule } from '@shared/shared.module';
 
 @NgModule({
   declarations: [NotFoundComponent],
-  imports: [CommonModule, NotFoundRoutingModule, SharedModule],
+  imports: [CommonModule, NotFoundRoutingModule, RouterModule, SharedModule],
 })
 export class NotFoundModule {}

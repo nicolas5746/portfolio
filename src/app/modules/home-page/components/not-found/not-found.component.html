@@ -5,7 +5,11 @@
     [src]="pageNotFoundPicture.imageSrc"
     [title]="pageNotFoundPicture.imageTitle"
   />
-  <h1>{{ errorCodeMsg }}</h1>
+  <h1>{{ errorCodeMsg | titlecase }}</h1>
   <br />
-  <app-home-button [homeButton]="backButton"></app-home-button>
+  <app-button
+    [routerLink]="homePage"
+    [buttonText]="buttonText | titlecase"
+    [buttonStyle]="buttonStyle"
+  ></app-button>
 </div>

@@ -1,0 +1,35 @@
+@use 'colours'
+@use 'fonts'
+
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+main,
+section
+    align-items: center
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    position: relative
+
+.card,
+.greeting
+    align-items: center
+    display: flex
+    flex-direction: column
+    justify-content: center
+    padding: 1%
+    position: relative
+    width: 100%
+    & img
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+        bottom: 0
+        filter: brightness(1.1) saturate(1.05) contrast(1.05)
+        padding: 1%
+        position: relative
+        top: 0
+        width: 20%

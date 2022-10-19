@@ -2,21 +2,20 @@
 <app-page-title [pageTitle]="currentPageTitle"></app-page-title>
 <section>
   <div class="card">
-    <p>{{ paragraph1 }}</p>
-    <div class="email">
+    <p>{{ emailPara }}</p>
+    <div class="email-me">
       <img
         [alt]="contactPicture.imageAlt"
         [src]="contactPicture.imageSrc"
         [title]="contactPicture.imageTitle"
       />
-      <button class="button" type="button">
-        <a
-          href="mailto:nicolas26386@gmail.com"
-          rel="noopener noreferrer"
-          target="_blank"
-          >{{ hiButton }}</a
-        >
-      </button>
+      <app-button
+        [buttonText]="buttonText"
+        [buttonStyle]="buttonStyle"
+        [inputLink]="email"
+        [inputRel]="rel"
+        [inputTarget]="target"
+      ></app-button>
     </div>
   </div>
   <app-scroll-down [routerLink]="homePage"></app-scroll-down>

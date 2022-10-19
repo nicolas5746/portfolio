@@ -1,6 +1,6 @@
-@use 'classes'
 @use 'colours'
 @use 'fonts'
+@use 'styles'
 
 .card
     & p
@@ -12,14 +12,13 @@
         position: relative
         text-align: center
 
-.email
+.email-me
     align-items: center
     display: flex
     flex-direction: column
     justify-content: center
     padding: 1%
     position: relative
-    text-align: center
     & img
         background-position: center
         background-repeat: no-repeat
@@ -32,52 +31,27 @@
         top: 0
         width: 30%
 
-.button
-    margin-bottom: 15%
-    & a
-        font-size: 1.5rem
-
 @media screen and (max-width: 359px)
     .card
         & p
             font-size: 0.8rem
-
-    .button
-        & a
-            font-size: 0.7rem
 
 @media screen and (min-width: 360px) and (max-width: 479px)
     .card
         & p
             font-size: 1.2rem
 
-    .button
-        & a
-            font-size: 0.8rem
-
 @media screen and (min-width: 480px) and (max-width: 599px)
     .card
         & p
             font-size: 1.4rem
-
-    .button
-        & a
-            font-size: 1rem
 
 @media screen and (min-width: 600px) and (max-width: 767px)
     .card
         & p
             font-size: 1.6rem
 
-    .button
-        & a
-            font-size: 1.2rem
-
 @media screen and (min-width: 768px) and (max-width: 991px)
     .card
         & p
             font-size: 1.8rem
-
-    .button
-        & a
-            font-size: 1.4rem

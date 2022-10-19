@@ -7,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
   public currentPageTitle: string = `contact`;
+
   public homePage: string = `/`;
 
-  public paragraph1: string = `Send me an e-mail`;
-  public hiButton: string = `Say Hi!`;
+  public emailPara: string = `Send me an e-mail`;
+  public email: string = `mailto:nicolas26386@gmail.com`;
+  public rel: string = `noopener noreferrer`;
+  public target: string = `_blank`;
+  public buttonText: string = `Say Hi!`;
+  public buttonStyle: string = `padding: 2.5%`;
 
   public contactPicture = {
     imageAlt: `Contact me`,

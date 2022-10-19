@@ -55,9 +55,9 @@
               }
             ],
             "styles": [
-              "src/assets/styles/classes.sass",
               "src/assets/styles/colours.sass",
-              "src/assets/styles/fonts.sass"
+              "src/assets/styles/fonts.sass",
+              "src/assets/styles/styles.sass"
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
@@ -130,9 +130,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/assets/styles/classes.sass",
               "src/assets/styles/colours.sass",
-              "src/assets/styles/fonts.sass"
+              "src/assets/styles/fonts.sass",
+              "src/assets/styles/styles.sass"
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
