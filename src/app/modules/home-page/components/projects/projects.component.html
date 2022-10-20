@@ -1,41 +1,13 @@
 <app-navbar></app-navbar>
 <app-page-title [pageTitle]="currentPageTitle"></app-page-title>
 <section>
-  <div class="card">
-    <img
-      [alt]="projects.imageAlt"
-      [src]="projects.imageSrc"
-      [title]="projects.imageTitle"
-    />
-    <div class="projects-list">
-      <h1>{{ project00.name | uppercase }}</h1>
-      <a [href]="project00.link" [target]="projects.blank">
-        <h2>{{ project00.link }}</h2>
-      </a>
-      <p>{{ projects.built }} {{ projects.lang01 | titlecase }}</p>
-      <a [href]="project00.repository" [target]="projects.blank">
-        <h3>{{ projects.github }}</h3>
-      </a>
-
-      <h1>{{ project01.name | uppercase }}</h1>
-      <a [href]="project01.link" [target]="projects.blank">
-        <h2>{{ project01.link }}</h2>
-      </a>
-      <p>{{ projects.built }} {{ projects.lang02 | titlecase }}</p>
-      <a [href]="project01.repository" [target]="projects.blank">
-        <h3>{{ projects.github }}</h3>
-      </a>
-
-      <h1>{{ project02.name| uppercase }}</h1>
-      <a [href]="project02.link" [target]="projects.blank">
-        <h2>{{ project02.link }}</h2>
-      </a>
-      <p>{{ projects.built }} {{ projects.lang03 | titlecase }}</p>
-      <a [href]="project02.repository" [target]="projects.blank">
-        <h3>{{ projects.github }}</h3>
-      </a>
-    </div>
-  </div>
+  <app-carousel
+    [projects]="projects"
+    [autoSlide]="true"
+    [controls]="true"
+    [indicators]="true"
+    [slideInterval]="3000"
+  ></app-carousel>
   <app-scroll-down [routerLink]="contactPage"></app-scroll-down>
 </section>
 <app-footer></app-footer>

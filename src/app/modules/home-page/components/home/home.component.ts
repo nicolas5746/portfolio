@@ -12,7 +12,6 @@ export class HomeComponent implements OnInit {
 
   public greeting = {
     welcome: `Welcome to my Portfolio!`,
-    herePara: `Here you can watch my projects and my code.`,
     greetingPara: `Learn more about me!`,
     imageAlt: `Hello!`,
     imageSrc: `assets/images/laptop-wave.png`,

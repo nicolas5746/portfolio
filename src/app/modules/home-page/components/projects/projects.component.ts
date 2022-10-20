@@ -9,36 +9,35 @@ export class ProjectsComponent implements OnInit {
   public currentPageTitle: string = `my projects`;
   public contactPage: string = `/contact`;
 
-  public projects = {
-    blank: `_blank`,
-    built: `Built with`,
-    github: `github repository`,
-    imageAlt: `My Projects`,
-    imageSrc: `assets/images/studying.png`,
-    imageTitle: `My Projects`,
-    lang00: `angular`,
-    lang01: `react`,
-    lang02: `vue 3`,
-    lang03: `vue 2`,
-  }
-
-  public project00 = {
-    name: `simpsons quotes api`,
-    link: `https://simpsonsquotesapi.netlify.app/`,
-    repository: `https://github.com/nicolas5746/simpsonsquotesapi/`,
-  }
-
-  public project01 = {
-    name: `estadios del uruguay`,
-    link: `https://estadiosdeluruguay.netlify.app/`,
-    repository: `https://github.com/nicolas5746/estadios/`,
-  }
-
-  public project02 = {
-    name: `automotora uruguay`,
-    link: `https://automotora-uruguay.netlify.app/`,
-    repository: `https://github.com/nicolas5746/automotora-uruguay/`,
-  }
+  public projects = [
+    {
+      name: `simpsons quotes api`,
+      link: `https://simpsonsquotesapi.netlify.app/`,
+      language: `react`,
+      repository: `https://github.com/nicolas5746/simpsonsquotesapi/`,
+      imageAlt: `Simpsons Quotes Api - React`,
+      imageSrc: `assets/images/react.png`,
+      imageTitle: `Simpsons Quotes Api - React`,
+    },
+    {
+      name: `estadios del uruguay`,
+      link: `https://estadiosdeluruguay.netlify.app/`,
+      language: `vue 3`,
+      repository: `https://github.com/nicolas5746/estadios/`,
+      imageAlt: `Estadios del Uruguay - Vue 3`,
+      imageSrc: `assets/images/vue3.png`,
+      imageTitle: `Estadios del Uruguay - Vue 3`,
+    },
+    {
+      name: `automotora uruguay`,
+      link: `https://automotora-uruguay.netlify.app/`,
+      language: `vue 2`,
+      repository: `https://github.com/nicolas5746/automotora-uruguay/`,
+      imageAlt: `Automotora Uruguay - Vue 2`,
+      imageSrc: `assets/images/vue2.png`,
+      imageTitle: `Automotora Uruguay - Vue 2`,
+    },
+  ];
 
   ngOnInit(): void {}
 }

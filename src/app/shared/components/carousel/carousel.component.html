@@ -1,0 +1,44 @@
+<div class="carousel" *ngIf="projects && projects.length > 0">
+  <div *ngFor="let project of projects; let i = index">
+    <a>
+      <img
+        [alt]="project.imageAlt"
+        [src]="project.imageSrc"
+        [title]="project.imageTitle"
+        [ngClass]="{ 'project-active': selectedIndex === i }"
+      />
+      <div class="projects" [ngClass]="{ 'project-info-active': selectedIndex === i }">
+        <h1>{{ project.name | uppercase }}</h1>
+        <a [href]="project.link" [target]="blank">
+          <h2>{{ project.link }}</h2>
+        </a>
+        <p>{{ built }} {{ project.language | titlecase }}</p>
+        <a [href]="project.repository" [target]="blank">
+          <h3>{{ github }}</h3>
+        </a>
+      </div>
+    </a>
+  </div>
+  <div class="controls">
+    <button
+      id="previous"
+      class="btn-control"
+      (click)="onPreviousClick()"
+      *ngIf="controls"
+    ></button>
+    <button
+      id="next"
+      class="btn-control"
+      (click)="onNextClick()"
+      *ngIf="controls"
+    ></button>
+  </div>
+  <div class="dots" *ngIf="indicators">
+    <span
+      (click)="selectProject(i)"
+      [ngClass]="{ 'dot-active': selectedIndex === i }"
+      *ngFor="let dot of projects; let i = index"
+    >
+    </span>
+  </div>
+</div>
