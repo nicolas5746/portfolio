@@ -16,7 +16,7 @@ export class ProjectsComponent implements OnInit {
       language: `react`,
       repository: `https://github.com/nicolas5746/simpsonsquotesapi/`,
       imageAlt: `Simpsons Quotes Api - React`,
-      imageSrc: `assets/images/react.png`,
+      imageSrc: `assets/images/simpsons.png`,
       imageTitle: `Simpsons Quotes Api - React`,
     },
     {
@@ -25,7 +25,7 @@ export class ProjectsComponent implements OnInit {
       language: `vue 3`,
       repository: `https://github.com/nicolas5746/estadios/`,
       imageAlt: `Estadios del Uruguay - Vue 3`,
-      imageSrc: `assets/images/vue3.png`,
+      imageSrc: `assets/images/estadios.png`,
       imageTitle: `Estadios del Uruguay - Vue 3`,
     },
     {
@@ -34,7 +34,7 @@ export class ProjectsComponent implements OnInit {
       language: `vue 2`,
       repository: `https://github.com/nicolas5746/automotora-uruguay/`,
       imageAlt: `Automotora Uruguay - Vue 2`,
-      imageSrc: `assets/images/vue2.png`,
+      imageSrc: `assets/images/automotora.png`,
       imageTitle: `Automotora Uruguay - Vue 2`,
     },
   ];

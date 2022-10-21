@@ -20,7 +20,7 @@ export class CarouselComponent implements OnInit {
   @Input() indicators: Boolean = false;
   @Input() controls: Boolean = false;
   @Input() projects: carousel[] = [];
-  @Input() slideInterval: number = 3000;
+  @Input() slideInterval: number = 5000;
 
   public selectedIndex: number = 0;
   public blank: string = `_blank`;
