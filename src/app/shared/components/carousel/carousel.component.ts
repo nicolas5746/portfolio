@@ -25,7 +25,7 @@ export class CarouselComponent implements OnInit {
   public selectedIndex: number = 0;
   public blank: string = `_blank`;
   public built: string = `Built with`;
-  public github: string =`github repository`;
+  public github: string =`view sourcecode`;
 
   autoSlideProjects(): void {
     setInterval(() => {
