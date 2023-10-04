@@ -1,0 +1,11 @@
+<app-navbar></app-navbar>
+<app-page-title [pageTitle]="currentPageTitle"></app-page-title>
+<section>
+  <app-carousel
+    [controls]="true"
+    [indicators]="true"
+    [projects]="projects"
+  ></app-carousel>
+  <app-scroll-down [routerLink]="contactPage"></app-scroll-down>
+</section>
+<app-footer></app-footer>

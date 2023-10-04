@@ -1,0 +1,90 @@
+@use 'colours'
+@use 'fonts'
+
+footer
+    align-items: center
+    background-color: colours.$black
+    bottom: 0
+    display: flex
+    flex-direction: row
+    height: 10%
+    left: 0
+    justify-content: space-around
+    padding: 2%
+    position: fixed
+    right: 0
+    width: 100%
+
+.page-info
+    position: absolute
+    text-align: center
+    & p
+        color: colours.$navajo-white
+        font-family: fonts.$lato
+        font-size: 1rem
+        font-weight: 400
+        &:hover
+            text-decoration: underline
+
+.profiles
+    align-items: center
+    display: flex
+    justify-content: center
+    position: absolute
+    right: 5%
+    & a 
+        & img
+            height: 2.5rem
+            justify-content: space-around
+            padding: 5%
+            transition: all 0.3s ease-in-out
+            width: 2.5rem
+            &:hover
+                cursor: pointer
+                transform: scale(1.2)
+
+.gradient
+    animation: footer-gradient 10s linear infinite
+    background-clip: border-box
+    background-color: colours.$navy
+    background-image: linear-gradient(15deg, colours.$night-blue 10%, colours.$ferrari-red 33%, colours.$maroon 45%, colours.$purple-maroon 66%, colours.$midnight-blue 100%)
+    background-size: 200% auto
+    bottom: 10%
+    height: 0.7vh
+    left: 0
+    position: fixed
+    right: 0
+    width: 100%
+
+@keyframes footer-gradient
+    to
+        background-position: 200%
+
+@media screen and (max-width: 479px)
+    footer
+        flex-direction: column
+        height: 20%
+
+    .page-info
+        & p
+            font-size: 0.6rem
+
+    .profiles
+        right: auto
+        top: 15%
+        & a img
+            height: 1.5em
+            width: 1.5em
+
+    .gradient
+        bottom: 20%
+
+@media screen and (min-width: 480px) and (max-width: 599px)
+    .page-info
+        & p
+            font-size: 0.6rem
+
+@media screen and (min-width: 600px) and (max-width: 991px)
+    .page-info
+        & p
+            font-size: 0.8rem

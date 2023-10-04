@@ -1,0 +1,30 @@
+<footer>
+  <div class="gradient"></div>
+  <div class="page-info">
+    <span
+      ><p>
+        {{ footer.fullName | titlecase }} &copy; {{ footer.copyrightYear }}
+      </p></span
+    >
+  </div>
+  <div class="profiles">
+    <a [href]="github.profile" [target]="blank"
+      ><img
+        [alt]="github.imageTitle"
+        [src]="github.imageSrc"
+        [title]="github.imageTitle"
+    /></a>
+    <a [href]="gmail.email" [rel]="gmail.rel" [target]="blank"
+      ><img
+        [alt]="gmail.imageTitle"
+        [src]="gmail.imageSrc"
+        [title]="gmail.imageTitle"
+    /></a>
+    <a [href]="linkedIn.profile" [target]="blank"
+      ><img
+        [alt]="linkedIn.imageTitle"
+        [src]="linkedIn.imageSrc"
+        [title]="linkedIn.imageTitle"
+    /></a>
+  </div>
+</footer>

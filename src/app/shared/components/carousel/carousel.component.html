@@ -1,0 +1,50 @@
+<div class="carousel" *ngIf="projects && projects.length > 0">
+  <div *ngFor="let project of projects; let i = index">
+    <a>
+      <img
+        [alt]="project.imageTitle"
+        [src]="project.imageSrc"
+        [title]="project.imageTitle"
+        [ngClass]="{ 'project-active': selectedIndex === i }"
+      />
+      <div
+        class="projects"
+        [ngClass]="{ 'project-info-active': selectedIndex === i }"
+      >
+        <h1>{{ project.name | uppercase }}</h1>
+        <a [href]="project.link" target="_blank">
+          <h2>{{ project.link }}</h2>
+        </a>
+        <h4 *ngIf='project.slowLoading'>(Server is asleep: Initially slow loading)</h4>
+        <p>{{ titles[0] }} {{ project.language | titlecase }}</p>
+        <a [href]="project.repository" target="_blank">
+          <h3>{{ titles[1] }}</h3>
+        </a>
+      </div>
+    </a>
+  </div>
+  <div class="controls">
+    <button
+      id="previous"
+      class="btn-control"
+      title="Previous"
+      (click)="onPreviousClick()"
+      *ngIf="controls"
+    ></button>
+    <button
+      id="next"
+      class="btn-control"
+      title="Next"
+      (click)="onNextClick()"
+      *ngIf="controls"
+    ></button>
+  </div>
+  <div class="dots" *ngIf="indicators">
+    <span
+      (click)="selectProject(i)"
+      [ngClass]="{ 'dot-active': selectedIndex === i }"
+      *ngFor="let dot of projects; let i = index"
+    >
+    </span>
+  </div>
+</div>

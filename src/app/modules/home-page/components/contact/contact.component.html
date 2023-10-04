@@ -1,0 +1,24 @@
+<app-navbar></app-navbar>
+<app-page-title [pageTitle]="currentPageTitle"></app-page-title>
+<section>
+  <div class="card">
+    <p>{{ titles[1] }}</p>
+    <div class="email-me">
+      <img
+        [alt]="titles[2].charAt(0).toUpperCase() + titles[2].slice(1)"
+        [src]="image"
+        [title]="titles[2].charAt(0).toUpperCase() + titles[2].slice(1)"
+      />
+      <app-button
+        [buttonText]="titles[0] | titlecase"
+        [inputLink]="email[0]"
+        [inputRel]="email[1]"
+        [inputStyle]="style"
+        [inputTarget]="email[2]"
+        [inputTitle]="titles[0] | titlecase"
+      ></app-button>
+    </div>
+  </div>
+  <app-scroll-down [routerLink]="routes"></app-scroll-down>
+</section>
+<app-footer></app-footer>

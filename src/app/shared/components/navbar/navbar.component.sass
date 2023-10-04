@@ -1,0 +1,131 @@
+@use 'colours'
+@use 'fonts'
+
+ul
+    background-color: colours.$transparent-grey
+    display: block
+    height: 100%
+    left: -100%
+    list-style-type: none
+    padding: 10%
+    position: fixed
+    top: 0
+    transition-duration: 0.2s
+    width: 100%
+    z-index: 1
+
+#nav-toggle
+    opacity: 0
+    &:checked+.nav-btn
+        ~ul
+            left: 0 !important
+        span
+            width: 90%
+            transform: rotate(0deg)
+            &::before
+                transform: rotate(135deg) translate(0.3125em, 0.3125em)
+                width: 70%
+            &::after
+                transform: rotate(-135deg) translate(0.3125em, -0.3125em)
+                width: 70%
+
+.nav-btn
+    cursor: pointer
+    height: 1.875em
+    left: 2%
+    position: fixed
+    top: 4%
+    width: 2.5em
+    z-index: 2
+    span
+        &::after
+            content: ''
+            top: 0.5em
+        &::before
+            content: ''
+            top: -0.5em
+    & span,
+    & span::before,
+    & span::after
+        background-color: colours.$linen
+        display: block
+        height: 0.1875em
+        position: absolute
+        transition-duration: 0.1s
+        width: 100%
+
+.nav-topic
+    background-color: colours.$transparent-dark-grey
+    border-radius: 1em
+    color: colours.$beige
+    display: block
+    font-family: fonts.$lato
+    font-size: 1.8rem
+    font-weight: 600
+    margin: 1% auto
+    padding: 1%
+    text-align: center
+    text-decoration: none
+    transition-duration: 0.2s
+    width: 25%
+    &:hover
+        background-color: colours.$burly-wood
+        border: 0.01em solid colours.$blanched-almond
+        color: colours.$blanched-almond
+
+@media screen and (max-width: 319px)
+    ul
+        padding: 25%
+    .nav-btn
+        left: 4%
+        top: 7%
+
+    .nav-topic
+        font-size: 0.8rem
+        width: 80%
+
+@media screen and (min-width: 320px) and (max-width: 359px)
+    ul
+        padding: 25%
+    .nav-btn
+        left: 4%
+        top: 7%
+
+    .nav-topic
+        font-size: 0.9rem
+        width: 70%
+
+@media screen and (min-width: 360px) and (max-width: 599px)
+    ul
+        padding: 20%
+    .nav-btn
+        left: 4%
+        top: 4.5%
+
+    .nav-topic
+        font-size: 0.9rem
+        width: 50%
+
+@media screen and (min-width: 600px) and (max-width: 767px)
+    ul
+        padding: 15%
+    .nav-topic
+        font-size: 1.2rem
+        width: 50%
+
+@media screen and (min-width: 768px) and (max-width: 991px)
+    .nav-btn
+        left: 4%
+        top: 3.2%
+
+    .nav-topic
+        font-size: 1.5rem
+        width: 35%
+
+@media screen and (min-width: 992px) and (max-width: 1199px)
+    .nav-btn
+        left: 4%
+        top: 5.1%
+
+    .nav-topic
+        width: 35%

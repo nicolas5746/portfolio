@@ -1,0 +1,58 @@
+@use 'colours'
+@use 'fonts'
+
+.card
+    & p
+        color: colours.$dark-blue
+        font-family: fonts.$lato
+        font-size: 2rem
+        font-weight: 600
+        padding: 1%
+        position: relative
+        text-align: center
+        &::first-letter
+            text-transform: uppercase
+
+.email-me
+    align-items: center
+    display: flex
+    flex-direction: column
+    justify-content: center
+    padding: 1%
+    position: relative
+    & img
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+        bottom: 0
+        filter: brightness(1.1) saturate(1.05) contrast(1.05)
+        margin-top: -12%
+        padding: 2%
+        position: relative
+        top: 0
+        width: 30%
+
+@media screen and (max-width: 359px)
+    .card
+        & p
+            font-size: 0.8rem
+
+@media screen and (min-width: 360px) and (max-width: 479px)
+    .card
+        & p
+            font-size: 1.2rem
+
+@media screen and (min-width: 480px) and (max-width: 599px)
+    .card
+        & p
+            font-size: 1.4rem
+
+@media screen and (min-width: 600px) and (max-width: 767px)
+    .card
+        & p
+            font-size: 1.6rem
+
+@media screen and (min-width: 768px) and (max-width: 991px)
+    .card
+        & p
+            font-size: 1.8rem

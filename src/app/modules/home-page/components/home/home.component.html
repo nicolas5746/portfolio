@@ -1,0 +1,15 @@
+<app-navbar></app-navbar>
+<app-page-title [pageTitle]="currentPageTitle"></app-page-title>
+<main>
+  <div class="greeting">
+    <img
+      [alt]="greeting.imageTitle"
+      [src]="greeting.imageSrc"
+      [title]="greeting.imageTitle"
+    />
+    <h1>{{ greeting.welcome }}</h1>
+    <p>{{ greeting.greetingPara }}</p>
+  </div>
+  <app-scroll-down [routerLink]="aboutPage"></app-scroll-down>
+</main>
+<app-footer></app-footer>
