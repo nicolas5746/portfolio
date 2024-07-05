@@ -1,0 +1,45 @@
+@use 'colours'
+@use 'fonts'
+
+.page-title
+    align-items: center
+    justify-content: center
+    left: -0.5%
+    position: relative
+    width: 100%
+    & h1
+        animation: page-title 5s linear infinite
+        background-clip: text
+        background-color: colours.$navy
+        background-image: linear-gradient(15deg, colours.$navy 10%, colours.$ferrari-red 33%, colours.$maroon 45%, colours.$purple-maroon 66%, colours.$midnight-blue 100%)
+        background-size: 200% auto
+        color: transparent
+        font-family: fonts.$dyna-puff
+        font-size: 2rem
+        text-align: center
+        text-shadow: 0.1em 0.3em 0.8em colours.$night-blue
+
+@keyframes page-title
+    to
+        background-position: 200%
+
+@media screen and (max-width: 319px)
+    .page-title
+        & h1
+            font-size: 0.9rem
+            margin-top: -5%
+
+@media screen and (min-width: 320px) and (max-width: 374px)   
+    .page-title
+        & h1
+            font-size: 1rem
+
+@media screen and (min-width: 375px) and (max-width: 479px)   
+    .page-title
+        & h1
+            font-size: 1.5rem
+
+@media screen and (min-width: 480px) and (max-width: 599px)
+    .page-title
+        & h1
+            font-size: 1.8rem

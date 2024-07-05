@@ -1,0 +1,45 @@
+@use 'colours'
+@use 'fonts'
+
+.greeting
+    margin-bottom: 10%
+    text-align: center
+    & h1,
+    & p,
+    & p
+        color: colours.$dark-blue
+        font-family: fonts.$lato
+        font-size: 1.5rem
+        font-weight: 600
+        line-height: 1.5
+        text-align: center
+
+@media screen and (max-width: 320px)
+    .greeting
+        & h1,
+        & p
+            font-size: 1rem
+
+@media screen and (min-width: 321px) and (max-width: 479px)
+    .greeting
+        & h1,
+        & p
+            font-size: 1.1rem
+
+@media screen and (min-width: 480px) and (max-width: 599px)
+    .greeting
+        & h1,
+        & p
+            font-size: 1.2rem
+
+@media screen and (min-width: 600px) and (max-width: 767px)
+    .greeting
+        & h1,
+        & p
+            font-size: 1.3rem
+
+@media screen and (min-width: 768px) and (max-width: 991px)
+    .greeting
+        & h1,
+        & p
+            font-size: 1.4rem

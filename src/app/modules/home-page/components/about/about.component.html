@@ -1,0 +1,22 @@
+<app-navbar></app-navbar>
+<app-page-title [pageTitle]="currentPageTitle"></app-page-title>
+<section>
+  <div class="card">
+    <img
+      [alt]="profileCard.imageTitle"
+      [src]="profileCard.imageSrc"
+      [title]="profileCard.imageTitle"
+    />
+    <div class="profile-data">
+      <h1>
+        {{ profileCard.introduction }} {{ profileCard.fullName | titlecase }}
+      </h1>
+      <h2>{{ profileCard.heading }}</h2>
+      <p>{{ profileCard.description[0] }}</p>
+      <p>{{ profileCard.description[1] }}</p>
+      <p>{{ profileCard.description[2] }} {{ profileCard.description[3] }}</p>
+    </div>
+  </div>
+  <app-scroll-down [routerLink]="route"></app-scroll-down>
+</section>
+<app-footer></app-footer>

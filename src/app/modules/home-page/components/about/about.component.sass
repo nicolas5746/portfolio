@@ -1,0 +1,66 @@
+@use 'colours'
+@use 'fonts'
+
+.card
+    & img
+        border-radius: 10%
+
+.profile-data
+    align-items: center
+    display: flex
+    flex-direction: column
+    font-family: fonts.$lato
+    justify-content: center
+    margin-bottom: 10%
+    padding: 5%
+    position: relative
+    text-align: center
+    & h1
+        color: colours.$gainsboro
+        font-size: 1.9rem
+        font-weight: 700
+    & h2
+        font-weight: 600
+    & p
+        font-weight: 400
+        white-space: normal
+    & h2,
+    & p
+        color: colours.$dark-blue
+        font-size: 1.4rem
+    & h1,
+    & h2,
+    & p
+        line-height: 1.5
+
+@media screen and (max-width: 320px)
+    .profile-data
+        & h1
+            font-size: 0.7rem
+        & h2,
+        & p
+            font-size: 0.6rem
+
+@media screen and (min-width: 321px) and (max-width: 479px)
+    .profile-data
+        & h1
+            font-size: 1rem
+        & h2,
+        & p
+            font-size: 0.9rem
+
+@media screen and (min-width: 480px) and (max-width: 599px)
+    .profile-data
+        & h1
+            font-size: 1.3rem
+        & h2,
+        & p
+            font-size: 1rem
+
+@media screen and (min-width: 600px) and (max-width: 767px)
+    .profile-data
+        & h1
+            font-size: 1.5rem
+        & h2,
+        & p
+            font-size: 1.3rem

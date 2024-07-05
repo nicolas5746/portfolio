@@ -1,0 +1,16 @@
+<div class="not-found">
+  <p>{{ titles[0] }}</p>
+  <img
+    [alt]="titles[1].charAt(0).toUpperCase() + titles[1].slice(1)"
+    [src]="routes[1]"
+    [title]="titles[1].charAt(0).toUpperCase() + titles[1].slice(1)"
+  />
+  <h1>{{ titles[1] }}</h1>
+  <br />
+  <app-button
+    [routerLink]="routes[0]"
+    [buttonText]="titles[2] | titlecase"
+    [inputStyle]="style"
+    [inputTitle]="titles[2] | titlecase"
+  ></app-button>
+</div>
